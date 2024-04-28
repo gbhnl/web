@@ -1,0 +1,11 @@
+baseurl: ""
+permalink: /:title.html
+
+collections:
+  home:
+    output: true
+    permalink: /home/:title
+  nieuwsbrief:
+    output: true
+    permalink: /nieuwsbrief/:title
+    
