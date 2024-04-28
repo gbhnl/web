@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSTCNDW1YL"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'G-CSTCNDW1YL');
+	</script>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <!-- Add your CSS stylesheets and other meta tags here -->
+  <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+	<div class='logo'>
+		<img src="{{ "/assets/images/hart.png" | relative_url }}" alt="Hart" class="hart"></img>
+		<div class="logo-lines">
+		  <div class="logo-line"><span class="logo-text">Gebedspastoraat</span></div>
+		  <div class="logo-line"><span class="logo-text">Harmelen</span></div>
+		</div>
+	</div>
+	<div class='header-title'>    
+    <nav>
+      <a class="menu" href="{{ site.baseurl }}/">Home</a>
+      <a class="menu" href="{{ site.baseurl }}/nieuwsbrief.html">Nieuwsbrief</a>
+      <a class="menu" href="{{ site.baseurl }}/wie-zijn-wij.html">Wie zijn wij</a>
+    </nav>
+	</div>
+  </header>
+
+  <div class="middle-section">
+    <div class="right-side">
+      <!-- This is where the content will be displayed dynamically -->
+      {{ content }}
+    </div>
+  </div>
+
+  <footer>
+    <p class="copyright">Copyright &copy; {{ "now" | date: "%Y" }} by Gebedspastoraat Harmelen</p>
+  </footer>
+
+  <!-- Add your JavaScript files here -->
+
+</body>
+</html>
