@@ -1,4 +1,4 @@
-baseurl: "/web"
+baseurl: ""
 permalink: /:title.html
 
 collections:
